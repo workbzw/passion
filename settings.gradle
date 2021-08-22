@@ -1,2 +1,5 @@
+include ':base'
+include ':user'
+include ':home'
 include ':app'
 rootProject.name = "Passion"
