@@ -1,5 +1,8 @@
+// c_:app组件模块 s_:服务提供
+include ':c_videolist'
+include ':c_uploader'
+include ':c_user'
+include ':s_video'
 include ':base'
-include ':user'
-include ':home'
 include ':app'
 rootProject.name = "Passion"
