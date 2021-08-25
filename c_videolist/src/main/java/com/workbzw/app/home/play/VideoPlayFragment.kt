@@ -16,6 +16,10 @@ class VideoPlayFragment : BaseMVVMFragment<VideoPlayFragmentBinding, VideoPlayVi
         return R.layout.video_play_fragment
     }
 
+    fun getInstence() {
+
+    }
+
     override fun init(savedInstanceState: Bundle?) {
 
     }

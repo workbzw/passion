@@ -2,7 +2,6 @@
 include ':c_videolist'
 include ':c_uploader'
 include ':c_user'
-include ':s_video'
 include ':base'
 include ':app'
 rootProject.name = "Passion"

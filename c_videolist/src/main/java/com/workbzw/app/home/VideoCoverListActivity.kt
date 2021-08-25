@@ -5,6 +5,7 @@ import com.alibaba.android.arouter.facade.annotation.Route
 import com.workbzw.app.base.BaseMVVMActivity
 import com.workbzw.app.base.RouterPath
 import com.workbzw.app.home.databinding.ActivityVideoCoverListBinding
+import com.workbzw.app.video.list.VideoCoverListFragment
 
 @Route(path = RouterPath.ComponentVideo.LIST)
 class VideoCoverListActivity :
@@ -14,9 +15,12 @@ class VideoCoverListActivity :
     }
 
     override fun init(savedInstanceState: Bundle?) {
-        val beginTransaction = supportFragmentManager.beginTransaction()
-//        beginTransaction.add(R.id.fl_container)
-        dataBinding.flContainer
+        val fragment = VideoCoverListFragment.newInstance()
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.container, fragment)
+                .commitNow()
+        }
     }
 
 }

@@ -13,7 +13,7 @@ abstract class BaseActivity : AppCompatActivity() {
     abstract fun setLayout(): Int
     abstract fun init(savedInstanceState: Bundle?)
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
         ARouter.getInstance().inject(this)
+        super.onCreate(savedInstanceState)
     }
 }

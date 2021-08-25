@@ -10,17 +10,16 @@ interface RouterPath {
         /**
          *
          */
-        const val COMPONENT_VIDEO = "/component/video"
-        const val COMPONENT_USER = "/component/user"
-        const val COMPONENT_APP = "/component/app"
-        const val COMPONENT_UPLOADER = "/component/up"
-        const val SERVICE_VIDEO = "/service/app"
+        const val COMPONENT_VIDEO = "/video"
+        const val COMPONENT_USER = "/user"
+        const val COMPONENT_APP = "/app"
+        const val COMPONENT_UPLOADER = "/up"
     }
 
     interface ComponentVideo {
         companion object {
-            const val LIST = "$COMPONENT_VIDEO/list/video"
-            const val COVER_LIST = "$COMPONENT_VIDEO/list/cover"
+            const val LIST_VIDEO = "$COMPONENT_VIDEO/list/video"
+            const val LIST_COVER = "$COMPONENT_VIDEO/list/cover"
         }
     }
 
@@ -42,10 +41,4 @@ interface RouterPath {
         }
     }
 
-    interface ServiceVideo {
-        companion object {
-            const val VIDEO_LIST = "$SERVICE_VIDEO/list/video"
-            const val VIDEO_COVER_LIST = "$SERVICE_VIDEO/list/cover"
-        }
-    }
 }

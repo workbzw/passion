@@ -1,4 +1,4 @@
-package com.workbzw.app.video;
+package com.workbzw.app.home;
 
 import android.content.Context;
 import android.util.AttributeSet;
